@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../core/core.dart';
+import '../../router/router.dart';
 
 class LoginProvider extends CustomCore {
   String cobaExtras;
@@ -15,5 +17,11 @@ class LoginProvider extends CustomCore {
   }) {
     super.onInit(context, tag: tag);
     notifyListeners();
+  }
+
+  goLogin() {
+    contextCore.go(
+      RouterNavigation.routedashboard,
+    );
   }
 }

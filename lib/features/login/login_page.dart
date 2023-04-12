@@ -99,29 +99,32 @@ class _LoginPageState extends State<LoginPage> {
             ),
           ),
           const Spacer(),
-          Container(
-            height: prov.size.height * 0.1,
-            width: prov.size.width * 0.9,
-            padding: EdgeInsets.symmetric(
-              horizontal: prov.size.width * 0.05,
-            ),
-            margin: EdgeInsets.only(
-              bottom: prov.size.width * 0.05,
-            ),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(
-                10,
+          GestureDetector(
+            onTap: () => prov.goLogin(),
+            child: Container(
+              height: prov.size.height * 0.1,
+              width: prov.size.width * 0.9,
+              padding: EdgeInsets.symmetric(
+                horizontal: prov.size.width * 0.05,
               ),
-              color: MyColors.colorPrimary,
-            ),
-            child: const Center(
-              child: Text(
-                "LOGIN",
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w700,
-                  color: Colors.white,
-                  letterSpacing: 2,
+              margin: EdgeInsets.only(
+                bottom: prov.size.width * 0.05,
+              ),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(
+                  10,
+                ),
+                color: MyColors.colorPrimary,
+              ),
+              child: const Center(
+                child: Text(
+                  "LOGIN",
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.white,
+                    letterSpacing: 2,
+                  ),
                 ),
               ),
             ),
