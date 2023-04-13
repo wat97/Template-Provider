@@ -2,6 +2,7 @@ import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import 'package:simpananku/features/dashboard/dashboard_page.dart';
 import 'package:simpananku/features/dashboard/dashboard_provider.dart';
+import 'package:simpananku/features/plan_general/plan_general.dart';
 
 import '../features/features.dart';
 
@@ -54,6 +55,24 @@ class RouterApp {
             child: ChangeNotifierProvider(
               create: (context) => DashboardProvider(),
               builder: (context, child) => const DashboardPage(),
+            ),
+            transitionDuration: const Duration(milliseconds: 10),
+          );
+        },
+      ),
+      GoRoute(
+        name: RouterNavigation.routeplangeneral,
+        path: RouterNavigation.routeplangeneral,
+        builder: (context, state) => ChangeNotifierProvider(
+          create: (context) => PlanGeneralProvider(),
+          builder: (context, child) => const PlanGeneral(),
+        ),
+        pageBuilder: (context, state) {
+          return TransitionFadeRoute<void>(
+            key: state.pageKey,
+            child: ChangeNotifierProvider(
+              create: (context) => PlanGeneralProvider(),
+              builder: (context, child) => const PlanGeneral(),
             ),
             transitionDuration: const Duration(milliseconds: 10),
           );

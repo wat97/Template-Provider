@@ -42,6 +42,10 @@ class _DashboardPageState extends State<DashboardPage> {
             ],
           ),
         ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () => prov.goToPlanner(),
+          child: const Icon(Icons.add_rounded),
+        ),
       ),
     );
   }
