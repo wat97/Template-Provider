@@ -1,5 +1,5 @@
-name: simpananku
-description: Application for simulating savings goals
+name: template_provider
+description: Template Provider
 
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev

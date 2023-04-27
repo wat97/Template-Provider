@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="deadser.apps.simpananku.simpananku">
+    package="deadser.apps.template_provider">
    <application
         android:label="simpananku"
         android:name="${applicationName}"

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:simpananku/models/model_plan_general.dart';
-import 'package:simpananku/services/storage/storage.dart';
+
 import 'package:go_router/go_router.dart';
 
 import '../../core/core.dart';
+import '../../models/models.dart';
+import '../../services/storage/storage.dart';
 
 class PlanGeneralProvider extends CustomCore {
   TextEditingController controllerTitle = TextEditingController();

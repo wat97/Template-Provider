@@ -5,18 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "SimpananKu",
+            "name": "Template Provider",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "SimpananKu Dev",
+            "name": "Template Provider Dev",
             "request": "launch",
             "type": "dart",
             "program": "lib/main_dev.dart"
         },
         {
-            "name": "SimpananKu (profile mode)",
+            "name": "Template Provider (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"

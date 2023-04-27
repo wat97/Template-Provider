@@ -1,12 +1,12 @@
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
-import 'package:simpananku/features/dashboard/dashboard_page.dart';
-import 'package:simpananku/features/dashboard/dashboard_provider.dart';
-import 'package:simpananku/features/plan_general/plan_general.dart';
 
+import '../features/dashboard/dashboard_page.dart';
+import '../features/dashboard/dashboard_provider.dart';
 import '../features/features.dart';
 
 import '../features/login/login.dart';
+import '../features/plan_general/plan_general.dart';
 import 'router_enum.dart';
 import 'transition/transition_fade.dart';
 

@@ -1,6 +1,5 @@
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
-import 'package:simpananku/resources/resources.dart';
 
 import 'login_provider.dart';
 import '../../widget/widget.dart';

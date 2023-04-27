@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:simpananku/resources/my_color.dart';
-import 'package:simpananku/widget/app_bar_custom.dart';
+
+import '../../resources/resources.dart';
+import '../../widget/widget.dart';
 import 'dashboard_provider.dart';
 
 class DashboardPage extends StatefulWidget {

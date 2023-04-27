@@ -1,4 +1,4 @@
-package deadser.apps.simpananku.simpananku
+package deadser.apps.template_provider
 
 import io.flutter.embedding.android.FlutterActivity
 
